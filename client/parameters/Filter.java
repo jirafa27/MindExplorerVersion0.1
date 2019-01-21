@@ -1,14 +1,15 @@
 package client.parameters;
 
 public abstract class Filter {
-    protected String name;
-    protected boolean tumbler;
 
-    public Filter(String name) {
-        this.name = name;
+    private String filterId;
+    private boolean tumbler;
+
+    public Filter(String filterId) {
+        this.filterId = filterId;
     }
 
-    public String getName() {
-        return name;
+    public String getFilterId() {
+        return filterId;
     }
 }
