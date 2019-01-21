@@ -1,14 +1,15 @@
 package client.parameters;
 
 public class Sex extends Filter {
-    private boolean sex;
 
-    public Sex (boolean sex) {
-        super("sex");
+    private String sex;
+
+    public Sex(String filterId, String sex) {
+        super(filterId);
         this.sex = sex;
     }
 
-    public boolean getSex() {
+    public String getSex() {
         return sex;
     }
 }
